@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios HTML5</title>
+</head>
+<body>
+    
+    <h1> Bienvenid@ a esta Web </h1>
+    
+    <h3> INFORMACIÓN SOLICITADA </h3>
+    
+    <p> Para enviarte la Información solicitada completar los siguientes campos. </p>
+    
+    <form action="">
+        <fieldset>
+            <legend> DATOS PERSONALES </legend>
+                
+                <label for=""> Nombre:  </label> <input type="text" id="Nombre" required>
+                
+                <br> <br>
+                <label for="">Correo Electronico: </label> <input type="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+                
+                
+                <br> <br>
+                <label for=""> Edad:  </label> <input type="number" name="edad" min="18" max="99" step="5"  required="required">
+                
+                <br> <br>
+                <label> Telefono:</label> <input type="tel" name="telefono" pattern="[0-9]{9}" required>
+                
+                <br> <br>
+                <label for=""> Comentario</label> 
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+                
+                <br> <br>
+                <label for=""> Seleccione la opción de su preferencia: </label>
+                 <datalist id="listas">
+                    <option value="azul">
+                    <option value="rojo">
+                    <option value="amarillo">
+                    <option value="negro">
+                    <option value="verde">
+                </datalist>
+                <input name="color" list="listas">
+                
+                <br> <br>
+                <input type="submit" value="Enviar">
+                
+                
+            
+        </fieldset>
+    </form>
+   
+    
+    <br><br>
+    <button> INICIO </button>
+        
+    
+</body>
+</html>
